@@ -195,7 +195,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>0）前言<br>一学期的程序设计实践的课程结束，通过服务器的代码编写发布，我熟悉了django后端开发的一些操作，在这里以一个应用步骤的方式写出，当作一个简单的总结。</p>
+        <h3 id="0）前言"><a href="#0）前言" class="headerlink" title="0）前言"></a>0）前言</h3><p>一学期的程序设计实践的课程结束，通过服务器的代码编写发布，我熟悉了django后端开发的一些操作，在这里以一个应用步骤的方式写出，当作一个简单的总结。  </p>
         
       
 
@@ -423,18 +423,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-
-	<div id="toc" class="toc-article">
-	  <strong class="toc-title">文章目录</strong>
-	  <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#服务器部署django"><span class="toc-number">1.</span> <span class="toc-text">服务器部署django</span></a></li></ol>
-	</div>
-
-        <h3 id="服务器部署django"><a href="#服务器部署django" class="headerlink" title="服务器部署django"></a>服务器部署django</h3><p>&#160; &#160; &#160; &#160;通过windows powershell远程登录服务器，安装许多东西后，安装django并跑程序<br>&#160; &#160; &#160; &#160;常用命令：<br>sudo python3  manage.py makemigrations<br>sudo python3 manage.py migrate<br>sudo python3 manage.py runserver 0.0.0.0:80<br>遇到困难？防火墙的问题：stop firewalld.service（关闭防火墙）<br>想删除文件：rm -rf 路径<br>想找文件： find / -iname “sshd_config”<br>uwsgi+nginx: 修改好代码后， 进入uwsgi→sudo uwsgi3 –reload uwsgi.pid<br>python3 manage.py startapp app    —创建app<br>select  *  from  表</p>
-<p>django     #显示数据方法</p>
-<p>​    ser=guide_info.objects.all()</p>
-<p>​    return JsonResponse({‘data’:str(ser[0].guideName)})<br>mysql检索信息: q = manager_info.objects.filter(manager=manager)  </p>
-<p>2020/06/06 任务明晰  （争取白天弄完）<br>按照文档把接口写完并每一个都有测试！<br>需测试：createTask、getOngoTask、cancelTask、finishTask、getAllTask、getAllGuide、getGuideData、getTaskInfo、getTaskInfo、getAllTask、setGuideStatus √<br>二维码连接、管理员操作结束？这个忘掉了等 √<br>需补充：与逻辑相关的数据，自己尝试的用自己的逻辑跑一次代码  </p>
-
+        <h3 id="服务器部署django"><a href="#服务器部署django" class="headerlink" title="服务器部署django"></a>服务器部署django
+        
       
 
       
@@ -509,25 +499,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-
-	<div id="toc" class="toc-article">
-	  <strong class="toc-title">文章目录</strong>
-	  <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#浏览全篇及首个项目（03-31）"><span class="toc-number">1.</span> <span class="toc-text">浏览全篇及首个项目（03-31）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#一、urls-py"><span class="toc-number">1.0.1.</span> <span class="toc-text">一、urls.py</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#二、settings-py-amp-amp-models-py"><span class="toc-number">1.0.2.</span> <span class="toc-text">二、settings.py&amp;&amp;models.py</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#三、admin-py"><span class="toc-number">1.0.3.</span> <span class="toc-text">三、admin.py</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#四、views-py-amp-amp-html"><span class="toc-number">1.0.4.</span> <span class="toc-text">四、views.py&amp;&amp;.html</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#五、template"><span class="toc-number">1.0.5.</span> <span class="toc-text">五、template</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#六、test-py"><span class="toc-number">1.0.6.</span> <span class="toc-text">六、test.py</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#七、static"><span class="toc-number">1.0.7.</span> <span class="toc-text">七、static</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#项目记录"><span class="toc-number">2.</span> <span class="toc-text">项目记录</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#导游宝"><span class="toc-number">2.1.</span> <span class="toc-text">导游宝</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#APP-api"><span class="toc-number">2.1.1.</span> <span class="toc-text">APP-api</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#使用djangoframework编写供微信小程序访问的api接口"><span class="toc-number">2.1.2.</span> <span class="toc-text">使用djangoframework编写供微信小程序访问的api接口</span></a></li></ol></li></ol></li></ol>
-	</div>
-
-        <h3 id="浏览全篇及首个项目（03-31）"><a href="#浏览全篇及首个项目（03-31）" class="headerlink" title="浏览全篇及首个项目（03-31）"></a>浏览全篇及首个项目（03-31）</h3><p><em>什么是Django？</em><br>&#160; &#160; &#160; &#160;Django是一个web框架，最初用于制作新闻的web站点<br><em>什么是web开发？</em><br>&#160; &#160; &#160; &#160;web开发是给予B/S架构，通过前后端的配合，将后台浏览器的数据展现给前台用户的应用。<br>首个项目<br>&#160; &#160; &#160; &#160;由于第一个项目主要是跟着教程熟悉开发流程，所以下面将主要从对于具体文件的操作进行说明。  </p>
-<h5 id="一、urls-py"><a href="#一、urls-py" class="headerlink" title="一、urls.py"></a>一、urls.py</h5><p>&#160; &#160; &#160; &#160;urls文件称为路由文件，相当于Django驱动站点的内容表格，通俗的说就是寄快递时填的地址。通过在后端规定好的地址进行访问，可以得到所需要的数据。而urls就是规定这些地址的合法性，假如urls文件的path中包含了要访问的地址，那么就可以访问。<br><em>注意：</em>当 Django 响应一个请求时，它会从 urlpatterns 的第一项开始，按顺序依次匹配列表中的项，直到找到匹配的项，然后执行该条目映射的视图函数或下级路由，其后的条目将不再继续匹配。因此，url路由的编写顺序非常重要！  </p>
-<h5 id="二、settings-py-amp-amp-models-py"><a href="#二、settings-py-amp-amp-models-py" class="headerlink" title="二、settings.py&amp;&amp;models.py"></a>二、settings.py&amp;&amp;models.py</h5><p>&#160; &#160; &#160; &#160;settings.py:整个Django项目的设置中心。<br>&#160; &#160; &#160; &#160;模型本质上就是数据库表的布局，再附加一些元数据。通俗理解，就是你要描述一个人，在models这里，你规定并且描述了他的手，他的腿。。。<br>migrations的功能非常强大，允许你随时修改你的模型，而不需要删除或者新建你的数据库或数据表，在不丢失数据的同时，实时动态更新数据库。我们将在后面的章节对此进行深入的阐述，但是现在，只需要记住修改模型时的操作分三步：<br><em>注意：</em>在今后需要修改模型，如下三步走：<br>1、在models.py中修改模型；<br>2、运行python manage.py makemigrations为改动创建迁移记录；<br>3、运行python manage.py migrate，将操作同步到数据库。</p>
-<h5 id="三、admin-py"><a href="#三、admin-py" class="headerlink" title="三、admin.py"></a>三、admin.py</h5><p>&#160; &#160; &#160; &#160;admin后台管理站点，暂不赘述。</p>
-<h5 id="四、views-py-amp-amp-html"><a href="#四、views-py-amp-amp-html" class="headerlink" title="四、views.py&amp;&amp;.html"></a>四、views.py&amp;&amp;.html</h5><p>&#160; &#160; &#160; &#160;视图，即将数据可视化。<br>&#160; &#160; &#160; &#160;在view文件中，处理request响应，并呈现响应的htm文件。  </p>
-<h5 id="五、template"><a href="#五、template" class="headerlink" title="五、template"></a>五、template</h5><p>&#160; &#160; &#160; &#160;暂不赘述  </p>
-<h5 id="六、test-py"><a href="#六、test-py" class="headerlink" title="六、test.py"></a>六、test.py</h5><p>&#160; &#160; &#160; &#160;暂不赘述  </p>
-<h5 id="七、static"><a href="#七、static" class="headerlink" title="七、static"></a>七、static</h5><p>&#160; &#160; &#160; &#160;可丰富网页呈现，通过css文件更改页面格式，通过gif文件改变背景，其他的暂不赘述。</p>
-<h3 id="项目记录"><a href="#项目记录" class="headerlink" title="项目记录"></a>项目记录</h3><h4 id="导游宝"><a href="#导游宝" class="headerlink" title="导游宝"></a>导游宝</h4><h5 id="APP-api"><a href="#APP-api" class="headerlink" title="APP-api"></a>APP-api</h5><p>&#160; &#160; &#160; &#160;app应用与project项目的区别：</p>
-<p>一个app实现某个功能，比如博客、公共档案数据库或者简单的投票系统；<br>一个project是配置文件和多个app的集合，这些app组合成整个站点；<br>一个project可以包含多个app；<br>一个app可以属于多个project！  </p>
-<p>&#160; &#160; &#160; &#160;创建方式：<br>python manage.py startapp —（例子：app01）<br>settings文件添加app01<br>改路由urls：牢记逻辑：主urls-&gt;分urls-&gt;views<br>建立数据库（mysql）<br>登录mysql，建立数据库，pycharm上连接数据库，在model文件中建立库中对应的表格，并附上响应的数据成员。  </p>
-<h5 id="使用djangoframework编写供微信小程序访问的api接口"><a href="#使用djangoframework编写供微信小程序访问的api接口" class="headerlink" title="使用djangoframework编写供微信小程序访问的api接口"></a>使用djangoframework编写供微信小程序访问的api接口</h5><p>在app的urls中添加对应功能接口的路由</p>
-
+        <h3 id="浏览全篇及首个项目（03-31）"><a href="#浏览全篇及首个项目（03-31）" class="headerlink" title="浏览全篇及首个项目（03-31）"></a>浏览全篇及首个项目（03-31）</h3><p><em>什么是Django？</em>
+        
       
 
       
@@ -916,15 +889,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-
-	<div id="toc" class="toc-article">
-	  <strong class="toc-title">文章目录</strong>
-	  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前期准备"><span class="toc-number">1.</span> <span class="toc-text">前期准备</span></a></li></ol>
-	</div>
-
-        <h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><p>&#160; &#160; &#160; &#160;需要提前落实好的有球票、酒店、城轨票。球票可以在大麦网上进行购买，我们买了个算不错的位置，一张票需要300元；酒店订在了东莞梦雅酒店，是一家离球馆近、环境好、价格实惠的酒店。由于广深城轨的地位基本等同于广佛线，是连接珠三角的交通工具，所以购票也是比较简单的。<br>比赛日当天<br>=<br>&#160; &#160; &#160; &#160;由于对路况不熟悉，我们比较早地出发到了。大约四点钟就到了东莞火车站，乘坐滴滴来到了梦雅酒店。酒店的环境比我预想中的好很多，房间十分的宽敞，各项设施也没有损坏。<br>&#160; &#160; &#160; &#160;晚上六点半左右，在酒店附近的真功夫吃完了晚餐，我们步行前往了东莞银行篮球中心。<br><img src="http://m.qpic.cn/psc?/V12wMcCe0Nl96y/gfbE2l9PHUztNHbA2prIHxpqmnj6zkWU9.DaVxzpsqesqlnJyvM.MHRiOSBZui*.0SXtqTXlnbe8a1usXS*Td9OGyn7qGqSbd*zJINlVFP0!/b&bo=VQhABgASgA0RGao!&rf=viewer_4" alt=" "><br>&#160; &#160; &#160; &#160;东莞银行篮球中心，有CBA第一馆之称。在五年前，成为东莞银行队的主场。确实，这样一个大气、华丽的场馆与宏远队这一CBA霸主的气质是相匹配的。篮球中心外有一个特色建筑，是四只手护着一个篮球的雕塑，蕴含着“无篮球不兄弟”的意思，也包含了东莞人对于篮球这项运动的无限热情。<br>&#160; &#160; &#160; &#160;进到场馆内部，球馆上课是一个硕大的显示屏，两侧一边是挂着东莞银行队伍成员的相片介绍，我看到了熟悉的杜峰、阿联、苏伟等人，另一侧则是一面面CBA冠军旗帜，想到访的球队和球迷展示着这张富有底蕴的球队这些年取得的丰硕成就。  </p>
-<p>&#160; &#160; &#160; &#160;这一天的比赛，广东队表现得比较慢热，一开始上来被吉林队一波10-0的小高潮打蒙了。而后，广东队通过调整慢慢地进入了自己的节奏，不断地下快攻，渐渐地拉开了分差。这次比赛，我认识了很多新锐，比如说长得很靓仔的胡明轩，他的左手控球以及富有侵略性的进攻手段让我很兴奋；杜润旺是一个三号位，他有着不错的投篮能力，是广东队关键的轮换球员；曾凡日在广东的体系里，成为了阿联的超级替补，上场时勤勤恳恳能攻能守，是广东队的福将。。。。。。</p>
-
+        <h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备
+        
       
 
       
@@ -1081,11 +1047,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">翻译之路</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color5">翻译之路</a>
               </li>
              
               <li class="article-tag-list-item">

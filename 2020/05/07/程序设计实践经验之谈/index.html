@@ -23,15 +23,15 @@
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta name="description" content="服务器部署django&amp;#160; &amp;#160; &amp;#160; &amp;#160;通过windows powershell远程登录服务器，安装许多东西后，安装django并跑程序&amp;#160; &amp;#160; &amp;#160; &amp;#160;常用命令：sudo python3  manage.py makemigrationssudo python3 manage.py migratesudo python3 m">
+  <meta name="description" content="服务器部署django">
 <meta property="og:type" content="article">
 <meta property="og:title" content="程序设计实践经验之谈">
 <meta property="og:url" content="http://yoursite.com/2020/05/07/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5%E7%BB%8F%E9%AA%8C%E4%B9%8B%E8%B0%88/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="服务器部署django&amp;#160; &amp;#160; &amp;#160; &amp;#160;通过windows powershell远程登录服务器，安装许多东西后，安装django并跑程序&amp;#160; &amp;#160; &amp;#160; &amp;#160;常用命令：sudo python3  manage.py makemigrationssudo python3 manage.py migratesudo python3 m">
+<meta property="og:description" content="服务器部署django">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-05-07T00:51:07.000Z">
-<meta property="article:modified_time" content="2020-06-26T08:33:29.159Z">
+<meta property="article:modified_time" content="2020-06-26T09:00:03.403Z">
 <meta property="article:author" content="Echo Cai">
 <meta property="article:tag" content="技术知识">
 <meta name="twitter:card" content="summary">
@@ -212,7 +212,7 @@
 	  <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#服务器部署django"><span class="toc-number">1.</span> <span class="toc-text">服务器部署django</span></a></li></ol>
 	</div>
 
-        <h3 id="服务器部署django"><a href="#服务器部署django" class="headerlink" title="服务器部署django"></a>服务器部署django</h3><p>&#160; &#160; &#160; &#160;通过windows powershell远程登录服务器，安装许多东西后，安装django并跑程序<br>&#160; &#160; &#160; &#160;常用命令：<br>sudo python3  manage.py makemigrations<br>sudo python3 manage.py migrate<br>sudo python3 manage.py runserver 0.0.0.0:80<br>遇到困难？防火墙的问题：stop firewalld.service（关闭防火墙）<br>想删除文件：rm -rf 路径<br>想找文件： find / -iname “sshd_config”<br>uwsgi+nginx: 修改好代码后， 进入uwsgi→sudo uwsgi3 –reload uwsgi.pid<br>python3 manage.py startapp app    —创建app<br>select  *  from  表</p>
+        <h3 id="服务器部署django"><a href="#服务器部署django" class="headerlink" title="服务器部署django"></a>服务器部署django<a id="more"></a></h3><p>&#160; &#160; &#160; &#160;通过windows powershell远程登录服务器，安装许多东西后，安装django并跑程序<br>&#160; &#160; &#160; &#160;常用命令：<br>sudo python3  manage.py makemigrations<br>sudo python3 manage.py migrate<br>sudo python3 manage.py runserver 0.0.0.0:80<br>遇到困难？防火墙的问题：stop firewalld.service（关闭防火墙）<br>想删除文件：rm -rf 路径<br>想找文件： find / -iname “sshd_config”<br>uwsgi+nginx: 修改好代码后， 进入uwsgi→sudo uwsgi3 –reload uwsgi.pid<br>python3 manage.py startapp app    —创建app<br>select  *  from  表</p>
 <p>django     #显示数据方法</p>
 <p>​    ser=guide_info.objects.all()</p>
 <p>​    return JsonResponse({‘data’:str(ser[0].guideName)})<br>mysql检索信息: q = manager_info.objects.filter(manager=manager)  </p>
@@ -494,11 +494,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">翻译之路</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color5">翻译之路</a>
               </li>
              
               <li class="article-tag-list-item">
